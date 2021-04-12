@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'Playfair';
+    src: url('../fonts/Playfair_Display/PlayfairDisplay-Regular.eot');
+    src: url('../fonts/Playfair_Display/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Playfair_Display/PlayfairDisplay-Regular.woff') format('woff'), url('../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Light';
+    src: url('../fonts/lato-light/Lato-Light.eot');
+    src: url('../fonts/lato-light/Lato-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-light/Lato-Light.woff') format('woff'), url('../fonts/lato-light/Lato-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Light Italic';
+    src: url('../fonts/lato-light-italic/Lato-LightItalic.eot');
+    src: url('../fonts/lato-light-italic/Lato-LightItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-light-italic/Lato-LightItalic.woff') format('woff'), url('../fonts/lato-light-italic/Lato-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proxima/ProximaNova-Regular.eot');
+    src: url('../fonts/proxima/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima/ProximaNova-Regular.woff') format('woff'), url('../proxima/fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('../fonts/futurapt/FuturaPT-Heavy.eot');
+    src: url('../fonts/futurapt/FuturaPT-Heavy.eot?#iefix') format('embedded-opentype'), url('../fonts/futurapt/FuturaPT-Heavy.woff') format('woff'), url('../fonts/futurapt/FuturaPT-Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Georgia Italic';
+    src: url('../fonts/georgia-italic/Georgia-Italic.eot');
+    src: url('../fonts/georgia-italic/Georgia-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/georgia-italic/Georgia-Italic.woff') format('woff'), url('../fonts/georgia-italic/Georgia-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('../fonts/georgia/Georgia.eot');
+    src: url('../fonts/georgia/Georgia.eot?#iefix') format('embedded-opentype'), url('../fonts/georgia/Georgia.eot') format('woff'), url('../fonts/georgia/Georgia.woff2') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: calc(100% - 200px);
+    max-width: 1400px;
+    box-shadow: 0 -4px 68px 0 rgba(0, 0, 0, 0.1);
+    margin: 100px auto;
+    padding: 130px 120px;
+    font-family: 'lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.89;
+}
+
+.h1 {
+    font-family: 'Playfair', serif;
+    font-size: 42px;
+    line-height: 1.3;
+    font-weight: normal;
+}
+
+p {
+    font-family: 'Lato Light';
+}
+
+.quote {
+    font-style: italic;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.quote::before {
+    content: '"';
+    font-size: 60px;
+    line-height: 0.67;
+}
+
+.first:first-letter {
+    font-size: 110px;
+    line-height: 0.75;
+    font-family: "Playfair", serif;
+    margin-right: 0.25em;
+    float: left;
+}
+
+.btn {
+    text-transform: uppercase;
+    width: 252px;
+    height: 50px;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    line-height: 2.5;
+    color: #eaa258;
+    font-weight: 700;
+    font-family: "Lato";
+    text-align: center;
+    background-color: white;
+    border: 1px solid #eaa258;
+}
+
+.fieldset {
+    border: none;
+    width: 876px;
+    height: 187px;
+    background-color: #181818;
+    margin-left: calc(100% - 876px);
+    margin-top: 45px;
+    color: white;
+    padding: 48px 60px;
+    filter: drop-shadow(-3.536px -3.536px 29.5px rgba(0, 0, 0, 0.16));
+}
+
+.label {
+    font-size: 15px;
+    letter-spacing: 5px;
+    line-height: 0.9;
+    color: #767676;
+    font-family: "Proxima Nova";
+    text-transform: uppercase;
+}
+
+.input {
+    height: 60px;
+    width: calc(100% - 10px);
+    padding: 10px;
+    font-size: 48px;
+    font-family: 'Playfair', serif;
+    background-color: #181818;
+    font-size: 48px;
+    line-height: 1.8;
+    color: #fefefe;
+    font-weight: 400;
+    border-color: #181818;
+    border-bottom: 3px solid #767676;
+}
+
+.icon_box {
+    width: 800px;
+    height: 76px;
+    filter: drop-shadow(-3.536px -3.536px 29.5px rgba(0, 0, 0, 0.16));
+    background-color: #fbc02d;
+    margin-left: calc(100% - 800px);
+    padding-top: 25px;
+}
+
+.icon-text-color,
+.icon-font-size,
+.icon-image,
+.icon-bold,
+.icon-italic,
+.icon-underline,
+.icon-paragraph-justify,
+.icon-paragraph-left,
+.icon-paragraph-center,
+.icon-paragraph-right {
+    color: rgba(252, 250, 250, 0.5);
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 15px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.icon-text-color:hover,
+.icon-font-size:hover,
+.icon-image:hover,
+.icon-bold:hover,
+.icon-italic:hover,
+.icon-underline:hover,
+.icon-paragraph-justify:hover,
+.icon-paragraph-left:hover,
+.icon-paragraph-center:hover,
+.icon-paragraph-right:hover {
+    color: white;
+}
+
+.container2 {
+    margin: 0 auto;
+    background-color: #434c50;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.inner_box {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Georgia', serif;
+    font-size: 32px;
+    line-height: 1.89;
+    background-color: white;
+    text-align: left;
+    width: calc(100% - 140px);
+    padding-left: 120px;
+    padding-top: 250px;
+    padding-bottom: 100px;
+}
+
+.name_date {
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #b4b4b4;
+    font-family: 'Proxima Nova', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.h4 {
+    font-size: 78px;
+    letter-spacing: 4.5px;
+    line-height: 0.5;
+    color: #2a2a2a;
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    word-spacing: 0.2em;
+}
+
+.h5 {
+    font-size: 30px;
+    line-height: 0.8;
+    color: #8f8f8f;
+    font-style: italic;
+    font-family: 'Georgia italic', serif;
+    text-align: left;
+    font-weight: 300;
+}
+
+.text1,
+.text2 {
+    font-size: 27px;
+    line-height: 1.5;
+    color: #000000;
+    font-family: 'Georgia', serif;
+    text-align: justify;
+    padding-right: 145px;
+    letter-spacing: 1.7;
+    word-spacing: 2;
+}
