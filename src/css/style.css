@@ -2,12 +2,12 @@
     font-family: 'Playfair';
     src: url('../fonts/Playfair_Display/PlayfairDisplay-Regular.eot');
     src: url('../fonts/Playfair_Display/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Playfair_Display/PlayfairDisplay-Regular.woff') format('woff'), url('../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Lato Light';
+    font-family: 'Lato';
     src: url('../fonts/lato-light/Lato-Light.eot');
     src: url('../fonts/lato-light/Lato-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-light/Lato-Light.woff') format('woff'), url('../fonts/lato-light/Lato-Light.ttf') format('truetype');
     font-weight: 300;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-    font-family: 'Lato Light Italic';
+    font-family: 'Lato';
     src: url('../fonts/lato-light-italic/Lato-LightItalic.eot');
     src: url('../fonts/lato-light-italic/Lato-LightItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-light-italic/Lato-LightItalic.woff') format('woff'), url('../fonts/lato-light-italic/Lato-LightItalic.ttf') format('truetype');
     font-weight: 300;
@@ -26,7 +26,7 @@
     font-family: 'Proxima Nova';
     src: url('../fonts/proxima/ProximaNova-Regular.eot');
     src: url('../fonts/proxima/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima/ProximaNova-Regular.woff') format('woff'), url('../proxima/fonts/ProximaNova-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -34,23 +34,23 @@
     font-family: 'Futura PT';
     src: url('../fonts/futurapt/FuturaPT-Heavy.eot');
     src: url('../fonts/futurapt/FuturaPT-Heavy.eot?#iefix') format('embedded-opentype'), url('../fonts/futurapt/FuturaPT-Heavy.woff') format('woff'), url('../fonts/futurapt/FuturaPT-Heavy.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Georgia Italic';
+    font-family: 'Georgia';
     src: url('../fonts/georgia-italic/Georgia-Italic.eot');
     src: url('../fonts/georgia-italic/Georgia-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/georgia-italic/Georgia-Italic.woff') format('woff'), url('../fonts/georgia-italic/Georgia-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: 400;
+    font-style: italic;
 }
 
 @font-face {
     font-family: 'Georgia';
     src: url('../fonts/georgia/Georgia.eot');
     src: url('../fonts/georgia/Georgia.eot?#iefix') format('embedded-opentype'), url('../fonts/georgia/Georgia.eot') format('woff'), url('../fonts/georgia/Georgia.woff2') format('truetype');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -119,15 +119,21 @@ p {
     border: 1px solid #eaa258;
 }
 
-.fieldset {
+.container2 {
+    margin: 0 auto;
+    background-color: #434c50;
+    width: 100%;
+    padding-top: 46px;
+}
+
+.container2 .fieldset {
     border: none;
-    width: 876px;
-    height: 187px;
+    margin-top: 45px;
+    max-width: 876px;
     background-color: #181818;
     margin-left: calc(100% - 876px);
-    margin-top: 45px;
     color: white;
-    padding: 48px 60px;
+    padding: 30px 60px;
     filter: drop-shadow(-3.536px -3.536px 29.5px rgba(0, 0, 0, 0.16));
 }
 
@@ -141,14 +147,11 @@ p {
 }
 
 .input {
-    height: 60px;
     width: calc(100% - 10px);
-    padding: 10px;
     font-size: 48px;
     font-family: 'Playfair', serif;
     background-color: #181818;
-    font-size: 48px;
-    line-height: 1.8;
+    line-height: 1.5;
     color: #fefefe;
     font-weight: 400;
     border-color: #181818;
@@ -164,16 +167,7 @@ p {
     padding-top: 25px;
 }
 
-.icon-text-color,
-.icon-font-size,
-.icon-image,
-.icon-bold,
-.icon-italic,
-.icon-underline,
-.icon-paragraph-justify,
-.icon-paragraph-left,
-.icon-paragraph-center,
-.icon-paragraph-right {
+.icon {
     color: rgba(252, 250, 250, 0.5);
     font-size: 30px;
     padding-left: 20px;
@@ -182,24 +176,8 @@ p {
     cursor: pointer;
 }
 
-.icon-text-color:hover,
-.icon-font-size:hover,
-.icon-image:hover,
-.icon-bold:hover,
-.icon-italic:hover,
-.icon-underline:hover,
-.icon-paragraph-justify:hover,
-.icon-paragraph-left:hover,
-.icon-paragraph-center:hover,
-.icon-paragraph-right:hover {
+.icon:hover {
     color: white;
-}
-
-.container2 {
-    margin: 0 auto;
-    background-color: #434c50;
-    width: 100%;
-    padding-bottom: 100px;
 }
 
 .inner_box {
@@ -212,8 +190,18 @@ p {
     text-align: left;
     width: calc(100% - 140px);
     padding-left: 120px;
-    padding-top: 250px;
-    padding-bottom: 100px;
+    padding-right: 120px;
+    padding-bottom: 50px;
+    padding-top: 195px;
+    margin-top: -150px;
+}
+
+.line {
+    height: 880px;
+    padding-left: 130px;
+    border-left: 4px solid #e8eced;
+    float: left;
+    margin-top: -195px;
 }
 
 .name_date {
@@ -228,12 +216,13 @@ p {
 .h4 {
     font-size: 78px;
     letter-spacing: 4.5px;
-    line-height: 0.5;
+    line-height: 1;
     color: #2a2a2a;
     font-family: 'Futura PT', sans-serif;
     font-weight: 100;
     text-transform: uppercase;
     word-spacing: 0.2em;
+    margin: 0;
 }
 
 .h5 {
@@ -244,6 +233,7 @@ p {
     font-family: 'Georgia italic', serif;
     text-align: left;
     font-weight: 300;
+    padding: 0;
 }
 
 .text1,
@@ -252,8 +242,14 @@ p {
     line-height: 1.5;
     color: #000000;
     font-family: 'Georgia', serif;
+    font-weight: 500;
     text-align: justify;
     padding-right: 145px;
-    letter-spacing: 1.7;
-    word-spacing: 2;
+    letter-spacing: 1.9;
+    word-spacing: 2.4;
+}
+
+.span1 {
+    font-family: 'Georgia', serif;
+    font-style: italic;
 }
